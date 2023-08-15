@@ -1,6 +1,19 @@
 const farmAnimals = 'cow horse sheep pig chicken';
+const [moo, neigh, baa, oink, cluck] = farmAnimals.split(" ")
+console.log(moo, neigh, baa, oink, cluck)
+const [bessie, ,dolly, babe, little] = farmAnimals.split(" ")
+console.log (bessie, dolly, babe, little)
+const [blackAndWhite, ,black, pink] = farmAnimals.split(" ")
+console.log(blackAndWhite, black, pink)
 
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+const [red, orange, yellow, green, blue, indigo, violet] = colors;
+console.log(red, orange, yellow, green, blue, indigo, violet)
+const [r, o, y, g, b, , v] = colors;
+console.log(r, o, y, g, b, v)
+const [ , , , , , indg]= colors
+console.log(indg)
+
 
 const muppet = {
   muppetName: 'Miss Piggy',
@@ -9,6 +22,9 @@ const muppet = {
   job: 'Cast member of The Muppet Show',
   partner: 'Kermit'
 };
+
+const {muppetName, color, song, job, partner} = muppet
+console.log(muppetName, color, song, job, partner)
 
 const nestedMuppet = {
   nestedName: 'Kermit',
@@ -24,6 +40,12 @@ const nestedMuppet = {
   nestedJob: 'Host of The Muppet Show',
   nestedPartner: 'Miss Piggy'
 };
+
+
+// i answered 7 for both objects as good practise 
+const {nestedName, nestedColor, nestedJob, nestedPartner} = nestedMuppet
+const {song1, song2, song3, song4} = nestedMuppet.album.theMuppetMovie
+console.log(nestedName, nestedColor, nestedJob, nestedPartner, song1, song2, song3, song4)
 
 // Strings
 
